@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Defeat Your Younger Brother</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff4d6;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #ff5a36;
+      font-size: 42px;
+    }
+
+    .card {
+      background: white;
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>How to Defeat Your Younger Brother 😂</h1>
+
+  <div class="card">
+    <h2>Step 1</h2>
+    <p>Challenge him to a video game and actually practice first.</p>
+  </div>
+
+  <div class="card">
+    <h2>Step 2</h2>
+    <p>Build the greatest pillow fort in human history.</p>
+  </div>
+
+  <div class="card">
+    <h2>Step 3</h2>
+    <p>Use the legendary sibling attack:</p>
+    <h3>“MOOOOOM! HE'S COPYING ME!”</h3>
+  </div>
+
+  <div class="card">
+    <h2>Random Sibling Challenge</h2>
+    <button onclick="challenge()">Give Me a Challenge</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const challenges = [
+      "Beat him in Rock Paper Scissors!",
+      "Make him laugh in under 30 seconds!",
+      "Race him to clean your room!",
+      "Build a taller LEGO tower!",
+      "See who can stay quiet the longest!",
+      "Challenge him to a dance battle!",
+      "Have a pillow-fort competition!"
+    ];
+
+    function challenge() {
+      const random = Math.floor(Math.random() * challenges.length);
+      document.getElementById("result").textContent = challenges[random];
+    }
+  </script>
+
+</body>
+</html>
